@@ -24,18 +24,11 @@ while(true){
 }
 console.log(ciudades);
 document.write(`<p>El arreglo tiene ${ciudades.length} elementos</p>`);
-
-for(let i=0; i<ciudades.length; i++){
-    if(i===0){
-        document.write(`<li>Elemento 1er posicion ${ciudades[i]}</li>`);
-    }
-    if(i===2){
-        document.write(`<li>Elemente 3er posicion ${ciudades[i]}</li>`);
-    }
-    if(i===ciudades.length-1){
-        document.write(`<li>Elemente ultima posicion ${ciudades[i]}</li>`);
-    }
-}
+document.write(`<ul>)`);
+document.write(`<li>Elemento 1er posicion ${ciudades[0]}</li>`);
+document.write(`<li>Elemente 3er posicion ${ciudades[2]}</li>`);
+document.write(`<li>Elemente ultima posicion ${ciudades[ciudades.length - 1]}</li>`);
+document.write('</ul>');
 
 ciudades.push('Paris');
 
