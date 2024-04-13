@@ -11,16 +11,16 @@ function esNumero(letra) {
     return letra == Number(letra);
 }
 function composicion(cadena) {
-  let may = 0;
-  let min = 0;
+  let may = false;
+  let min = false;
   for (let index = 0; index < cadena.length; index++) {
     let letraActual = cadena.charAt(index);
 
     if (esMayuscula(letraActual)) {
-      may = 1;
+      may = true;
     }
     if (esMinuscula(letraActual)) {
-      min = 1;
+      min = true;
     }
    
   }
